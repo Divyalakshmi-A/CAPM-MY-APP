@@ -1,0 +1,6 @@
+Employee_EmployeeId;Name;Gender;DateOfBirth;Address;ContactNumber;EmailId
+101;John Doe;Male;4/12/1985;"123 Elm St, Springfield";9876543210;john.doe@example.com
+102;Jane Smith;Female;11/23/1990;"456 Oak St, Springfield";9123456789;jane.smith@example.com
+103;Robert Brown;Male;7/5/1982;"789 Pine St, Denver";9345678901;robert.brown@example.com
+104;Emily White;Female;1/15/1995;"321 Maple St, Boulder";9654321098;emily.white@example.com
+105;William Black;Male;9/10/1988;"654 Cedar St, Denver";9765432109;william.black@example.com

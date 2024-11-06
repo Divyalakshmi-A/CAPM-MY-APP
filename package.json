@@ -1,0 +1,40 @@
+{
+  "name": "capm-my-app",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js/hana": "^1",
+    "@sap/cds": "^8",
+    "express": "^4",
+    "sqlite": "^5.1.1"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.6",
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^8",
+    "@sap/ux-specification": "UI5-1.130",
+    "rimraf": "^5.0.5"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-myapp": "cds watch --open myapp/webapp/index.html?sap-ui-xx-viewCache=false",
+    "undeploy": "cf undeploy capm-my-app --delete-services --delete-service-keys --delete-service-brokers",
+    "build": "rimraf resources mta_archives && mbt build --mtar archive",
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1",
+    "watch-employee_management": "cds watch --open employee_management/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "cds": {
+    "sql": {
+      "native_hana_associations": false
+    }
+  },
+  "sapux": [
+    "app/myapp",
+    "app/myapp",
+    "app/myapp",
+    "app/employee_management"
+  ]
+}

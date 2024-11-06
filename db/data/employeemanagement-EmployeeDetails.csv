@@ -1,0 +1,6 @@
+EmployeeId;Name;Qualification;Designation;EmployeeStatus;YearOfExperience;prio_code;salary;
+101;John Doe;B.Tech;Software Engineer;Active;6;M;50000;
+102;Jane Smith;MBA;HR Manager;Active;5;M;40000;
+103;Robert Brown;M.Sc;Data Scientist;On Leave;8;H;70000;
+104;Emily White;B.A.;Marketing Specialist;Active;3;L;20000;
+105;William Black;Ph.D;Research Scientist;Active;10;H;80000;
